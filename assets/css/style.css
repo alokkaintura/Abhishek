@@ -514,6 +514,8 @@ body {
     left: 20px;
     right: 20px;
     background: var(--white);
+    /* opacity: 0.5; */
+    z-index: 1;
     border-radius: var(--radius-25);
     padding: 20px;
 }
@@ -524,6 +526,7 @@ body {
     position: absolute;
     top: 0;
     right: 25px;
+    z-index: 2;
     display: flex;
     align-items: center;
     gap: 1px;
@@ -538,10 +541,12 @@ body {
     font-size: var(--fs-6);
     text-transform: uppercase;
     margin-bottom: 8px;
+    z-index: 2;
 }
 
 .popular-card .card-title {
     margin-bottom: 5px;
+    z-index: 2;
 }
 
 .popular-card :is(.card-subtitle,
